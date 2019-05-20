@@ -8,7 +8,7 @@ class App {
 
     }
   }
-}
+} console.log('main page')
 
 
 window['app'] = new App();

@@ -1,0 +1,76 @@
+body{
+  background-color: #1c6ad3;
+background-image: url('backImage.jpg');
+max-width: 100%;
+min-height: 100%;
+background-image: no-repeat;
+color: whitesmoke;
+
+}
+#title{
+  background-image: url('jPLogo.jpg');
+  background-position: center;
+height: 300px;
+color: whitesmoke;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+display: flex;
+justify-items: center;
+align-content: center;
+}
+#question-location{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+i {
+  margin-left: 50px;
+}
+.btn{
+  margin-top: 80px;
+}
+
+#or{
+  margin-top: 80px;
+}
+.scene {
+  width: 200px;
+  height: 260px;
+  perspective: 600;
+}
+.card {
+  background-color: #1c6ad3;
+  color: whitesmoke;
+  width: 500px;
+  height: 250px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 687px;
+}
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__face--front {
+  background: #fb9f54;
+  width: 500px;
+  height: 250px;
+}
+
+.card__face--back {
+  background: #e9589e;
+  transform: rotateY( 180deg );
+  width: 500px;
+  height: 250px;
+}
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+#Value{
+  margin-top: -52px;
+}

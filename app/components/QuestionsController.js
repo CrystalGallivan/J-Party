@@ -6,6 +6,7 @@ import QuestionService from "./QuestionsService.js";
 let _quesService = new QuestionService()
 
 function _drawQuestions() {
+
   let questions = _quesService.Questions
   let template = ``
   for (let i = 0; i < questions.length; i++) {
@@ -19,9 +20,13 @@ function _drawQuestions() {
 //PUBLIC
 export default class QuestionController {
   constructor() {
+    console.log('controller page')
     //register subscribers
-    _quesService.addSubscribers('questions', _drawQuestions)
+    _quesService.addSubscribers('question', _drawQuestions)
     //fetch data
     _quesService.getApiQuestions();
+  }
+  scoreCount() {
+    _quesService.scoreCount()
   }
 }
